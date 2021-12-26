@@ -1,0 +1,27 @@
+{
+    "apps" : [{
+        "name"      : "halo blog",
+        "script"    : "index.js",  // 启动文件位置，需要修改
+        "env": {
+            "COMMON_VARIABLE": "true"
+        },
+        "env_production" : {
+            "NODE_ENV": "production"
+        }
+    }],
+    "deploy" : {
+            "production" : {
+                "user" : "username",   // 服务器用户名，需要修改
+                "host" : ["123.x.x.x"],  // 服务器地址，需要修改
+                "ref"  : "origin/master",  // 项目branch，视情况修改
+                "repo" : "git@xxx.git", // 项目地址，需要修改 
+                "path" : "/opt/app/halo-xue-react-next", // 当前项目位置，需要修改
+                "pre-setup" : "rm -rf /opt/app/halo-xue-react-next/source", //需要修改
+                "post-deploy" : "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production",   // 可以不修改，建议使用 cnpm 安装
+                "ssh_options": "StrictHostKeyChecking=no",
+                "env"  : {
+                    "NODE_ENV": "production"
+            }
+        }
+    }
+}
