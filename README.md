@@ -1,9 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## Overview
-This is a NFT saling **TEST** website for UnknownDAO. Before you mint a NFT, make sure that you have at least 2 matic in your wallet for minting 1 NFT.    
+This is a NFT saling **TEST** website for UnknownDAO. Before you mint a NFT, make sure that you have at least 2 matic in your wallet for minting 1 NFT.  **Live demo**: [livedemo](https://jovial-colden-c28f41.netlify.app/)  
 - View our AstroCat NFT at opensea: https://opensea.io/collection/astrocattokens          
 - Contract address in polygon testnet:[Address](https://mumbai.polygonscan.com/address/0x7de72ea18b27cdc91a152e682816cab6cd744f3e).                                 
-**Live demo**: [livedemo](https://stoic-curran-38ad95.netlify.app/)
+
 ## Features
 Simple NFT minting website
 ![sign](./img/sign.jpg)
